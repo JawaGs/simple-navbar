@@ -1,0 +1,114 @@
+body{
+    background: rebeccapurple;
+    margin: 0;
+}
+
+nav{
+    background: white;
+    width: 100vw;
+    box-shadow:  2px 2px 4px 5px rgba(0, 0, 0, .3);
+    height: 15vh;
+}
+
+.logo{
+    height: 2.4em;
+    width: 2.4em;
+    margin: 10px;
+    image-rendering: pixelated;
+}
+
+.link{
+    height: 0;
+    overflow: hidden;
+    background: white;
+    transition: all ease .4s;
+}
+
+.show{
+    height: 5em;
+}
+
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-toggle{
+    background: transparent;
+    margin:  0 10px;
+    height: 40px;
+    width: 40px;
+    user-select: none;
+    font-size: 1em;
+    outline-style: none;
+}
+
+.fa-bars{
+
+    transition: all .6s;
+}
+
+.girar{
+    transform: rotate(-90deg);
+}
+
+
+/* estilos para el sidebar */
+
+.container{
+    display: flex;
+}
+
+
+.sidebar{
+    background: aquamarine;
+    height: 100vh;
+    width: 0;
+    z-index: 20;
+    overflow: hidden;
+    transition: all  .6s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desplegar{
+    width: 25vw;
+}
+
+.fa-times{
+    color: rgb(247, 48, 48);
+    margin: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* estilos del modal  */
+
+.overlay{
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.26);
+    overflow: hidden;
+    z-index: 30;
+}
+
+.modal{
+    width: 0;
+    height: 200px;
+    background: white;
+    position: absolute;
+    top: 20vw;
+    left: 40%;
+    overflow: hidden;
+    z-index: 100;
+    transition: all ease-in-out .3s;
+}
+
+.mostrarModal{
+    width: 200px;
+}
+.mostrarOverlay{
+    width: 100vw;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Navbar</title>
+    <link href="/fa/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="sidebar">
+            <span></span>
+            <i class="fas fa-times cerrar"></i>
+        </div>
+        <nav>
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img src="./assets/logo.png" alt="logo" class="logo">
+                    <button class="side-toggle" >
+                        SideBar
+                    </button>
+                    <button class="nav-toggle" >
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <ul id="lista" class="link">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Project</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="modal-container">
+                <button class="mostrar-modal">
+                    mostrar modal
+                </button>
+                <div class="modal">
+                    <i class="fas fa-times cerrarModal"></i>
+                    Este es un modal
+                </div>
+            </div>
+        </nav>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
